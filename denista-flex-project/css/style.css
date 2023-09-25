@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* body *{border: 2px solid ;} */
+.container {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container .left,
+.container .right {
+    display: flex;
+    align-items: center;
+}
+
+.para {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.para1 {
+    color: #00bfff;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.para2 {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.mid .x {
+    margin-top: 0px;
+}
+
+.container .icon {
+    margin-left: 20px;
+    color: #00bfff;
+    border-radius: 50%;
+}
+
+.icon1 {
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 30px;
+}
+
+.nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+}
+
+.active {
+    color: #a8c337;
+}
+
+.active:hover {
+    color: black;
+}
+
+.img1 {
+    background: url(../images/bg_1.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;  
+}
+
+.img2 {
+    background: url(../images/bg_2.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    opacity: 0;
+    animation: slide1 4s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes slide1 {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.text {
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.text h1,
+.text h3,
+button {
+    font-weight: bolder;
+}
+
+.text h1 {
+    width: 100%;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.text h3 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #a8c337;
+    border: none;
+}
+
+.about {
+    position: relative;
+}
+
+.img3 img {
+    height: 750px;
+    width: 450px;
+    object-fit: cover;
+    margin-left: 80px;
+}
+
+.text1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 50%;
+}
+
+.text1 p {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.text1 h1,
+.text1 .subheading {
+    margin-top: 30px;
+    width: 90%;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.text1 .subheading {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.img4 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-right: 80px;
+    background: url(../images/doc-1.jpg);
+    background-size: 100% 100%;
+}
+
+.img4 h3,
+.img4 span {
+    position: absolute;
+    left: 17%;
+    bottom: 10%;
+}
+
+.img4 span {
+    bottom: 5%;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.dental-service,
+.find-dr{
+    width: 30%;
+    color: #ffffff;
+}
+.dental-service,
+.find-dr {
+    background: #73bfee;
+}
+
+.form {
+    width: 40%;
+    background: #4ca5c9;
+}
+
+.dental-service h3,
+.find-dr h3,
+.form h3 {
+    padding: 25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.dental-service p, .find-dr p{
+    padding-top: 20px;
+}
+.dental-service button, .find-dr button{
+    padding: 20px;
+    border-radius: 5px;
+    height: 30px;
+    background: transparent;
+    width: 200px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-bottom: 5px groove #73bfee;
+}
+.form button{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+
+
+}
+
+input{
+    border: none;
+    background: #4ca5c9;
+    border-bottom: 1px solid #ffffff;
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+    color: #ffffff;
+}
+input::placeholder{
+    color: #ffffff;
+}
+
+select{
+    
+    padding: 11px;
+    color: #ffffff;
+    width: 120px;
+    border: none;
+    background: #4ca5c9;
+    border-bottom: 1px solid #ffffff;
+}
+.clinic-services{
+    text-align: center;
+   margin-top: 100px;
+
+   /* display: inline; */
+  /* font-size: 100px; */
+}
+.subheading{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.clinic-services h2{
+    font-size: 50px;
+}
+.clinic-services p{
+    margin: auto;
+    font-size: 20px;
+    padding: 30px;
+    width: 50%;
+}
+.box{
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    /* background: red; */
+}
+.box1{
+   
+ width: 20%;
+}
+.box1 i{
+    /* background: black; */
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 45px;
+   position: absolute;
+   top: 0%;
+   border: 1px solid #7e9299;
+   color: #00bfff;
+}
+.box1 h2{
+    font-size: 25px;
+    margin-top: 80px;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+.box1 p{
+    font-size: 18px;
+    width: 100%;
+    padding-top: 0%;
+}
+div .img5{
+   height: 500px;
+   width: 100%;
+   background: url(../images/bg_3.jpg);
+   background-size: cover;
+   margin-top: 450px;
+   background-attachment: fixed;
+   position: relative;
+   
+}
+.img5 h1{
+     position: absolute; 
+     top: 40%;       
+     left: 10%;
+}
+.img5 p{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 40%;
+
+}
+.Doctors, .clients, .price, .blog{
+    text-align: center;
+   margin-top: 100px;
+   
+}
+.Doctors .subheading, .clients .subheading{
+    font-size: 30px;
+}
+.Doctors h2, .clients h2, .conclution h2, .price h2{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.Doctors p, .price p{
+    font-size: 20px;
+    margin: auto;
+    width: 80%;
+    
+}
+.box2{
+    height: 400px;
+    width: 20%;
+}
+.box2 h2{
+     font-size: 20px;
+     padding: 0px;
+     margin-top: 100px;   
+     position: relative;
+     bottom: -1%;
+     
+}
+.box2 span{
+    position: absolute;
+    bottom: 27%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.a:hover, .b:hover, .c:hover, .d:hover{
+    cursor: pointer;
+    height: 420px;
+
+}
+.a:hover h2,.b:hover h2,.c:hover h2,.d:hover h2{
+    color: #00bfff;
+}
+.box2 p{
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 17px;
+}
+ .a{
+   background: url(../images/doc-1.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.b{
+    background: url(../images/doc-2.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.c{
+    background: url(../images/doc-3.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.d{
+    background: url(../images/doc-4.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.box2 ul li {
+    display: flex;
+   position: absolute;
+   top: 51%;
+   left: 18%;
+
+}
+.box2 i{
+    color: #a8c337;
+    font-size: 12px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    display: inline;
+     padding: 10px;
+     margin-left: 5px;
+}
+.a:hover i,.b:hover i,.c:hover i,.d:hover i{
+    font-size: 15px;
+}
+.clients, .blog{
+     margin-top: 150px;
+    background: rgb(240, 240, 241);
+    height: 500px;
+    width: 100%;
+     padding: 90px; 
+   
+}
+.clients .subheading{
+    font-size: 20px;  
+}
+.client h2{
+    font-size: 50px;
+}
+.About-us{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 60px;
+     margin-right: 200px;
+}
+.img6{
+   position: relative;
+}
+.img6 p{
+    position: absolute;
+    width: 200px;
+    left: 100%;
+    top: -20%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.img6 .name{
+    font-size: 20px;
+    font-weight: bolder;
+    /* top: 120%;
+    left: 90%; */
+    margin:130px -10px;
+}
+.img6 span{
+    position: absolute;
+    top: 130%;
+    left: 150%;
+    color: #00bfff;
+}
+.img6 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.conclution{
+    background: linear-gradient(rgba(10, 114, 212, 0.5),
+    rgba(4, 158, 179, 0.5)), url(../images/bg_3.jpg);
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+} 
+.conclution h2, .conclution p, .conclution button{
+    position: absolute; 
+    top: 40%;       
+    left: 2%;
+    color: #ffffff;
+}
+.conclution p{
+    top: 70%;
+}
+.conclution button{
+    left: 80%;
+}
+.price p{
+    color: rgba(0, 0, 0, 0.3);
+}
+.price .box{
+    height: 430px;
+    justify-content: space-evenly;
+}
+.price .box1{
+    display: inline;
+    border: 1px solid #00bfff;
+}
+.price ul li{
+    padding: 11px;
+    list-style: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.price .pricing{
+    font-size: 40px;
+    color: #00bfff;
+}
+.box1:hover .pricing{
+       color: #a8c337;
+}
+.box1:hover button{
+    background: #a8c337;
+}
+.pricing .per{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.price button{
+    background: #00bfff;
+    width: 50%;
+    font-weight: lighter;
+}
+.price h3{
+    font-weight: lighter;
+}
+.blog{
+    height: 900px;
+}
+.blog .box{
+    height: 550px;
+    justify-content: space-around;
+    position: relative;
+}
+.box3{
+    width: 32%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+.box3:hover button{
+    background: #ffffff;
+    color: #00bfff;
+}
+.blog .a{
+    background: url(../images/image_1.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.blog .b{
+    background: url(../images/image_2.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.blog .c{
+    background: url(../images/image_3.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.blog .box3 h3, .blog .box3 p, .blog button{
+    position: absolute;
+    width: 100%;
+}
+ .blog .box3 h3{
+   font-size: 25px;
+   top: 60%;
+ }
+.blog .box3 p{
+    top: 80%;
+    font-size: 15px;
+    color: black;
+}
+.blog button{
+    font-size: 15px;
+    width: 30%;
+    height: 30px;
+    top: 88%;
+    left: 1%;
+}
+.date{
+     height: 100px;
+     width: 100px;
+     background-color: #00bfff;
+     color: #ffffff;
+     position: absolute;
+     left: 74%;
+     top: 42%;
+}
+.day{
+    font-size: 30px;
+}
+.footer{
+    margin-top: 200px;
+    background: #00bfff;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+
+.intro, .enquiry,.link, .service1, .hours, .subscribe{
+    /* display: inline; */
+    margin-top: 50px;
+    width: 13%;
+}
+.down{
+    font-size: 20px;
+    color: #ffffff;
+}
+.intro p, .enquiry ul li, .link ul li, .service1 ul li, .recent-blog p,.hours p{
+    font-size: 15px;
+    color: #ffffff;
+}
+.enquiry i{
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.recent-blog {
+    width: 15%;
+    position: relative;
+    margin-top: 100px;
+    padding: 20px;
+}
+.recent-blog p{
+     margin-top: 10px;
+     padding: 10px;
+}
+.blog-img8, .blog-img9
+{   
+    width: 100px;
+    height: 70px;
+    background-repeat: no-repeat;
+    list-style: none;
+    background: url(../images/image_1.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 90%;
+    top:   18%;
+    
+}
+.blog-img9
+{   
+    background-repeat: no-repeat;
+    background: url(../images/image_2.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 90%;
+    top:   60%;   
+}
+.recent-blog span{
+    font-size: 15px;
+    color: #dee2e6;
+
+}
+.subscribe{
+    margin-bottom: 120px;
+    /* margin-left: -80px; */
+    background:#00bfff
+}
+.subscribe .form{
+    background-color: transparent;
+}
+.subscribe input, .subscribe button{
+    margin-left: -20px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+}
+.subscribe input{
+    background: rgba(218, 218, 221, 0.2);
+    border-bottom: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.subscribe button{
+    border-radius: 0%;
+    background: #a8c337;
+}
