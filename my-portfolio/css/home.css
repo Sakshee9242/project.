@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lobster", serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-img {
+    height: 630px;
+    width: 100%;
+    background: linear-gradient(rgba(117, 87, 62, 0.5), rgba(122, 41, 41, 0.7)), url(../img/bg-masthead.jpg);
+    background-size: 100% 100%;
+
+}
+
+.logo {
+    width: 20%;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: #ffffff;
+
+}
+
+.nav {
+    /* position: absolute;
+    left: 50%;
+    top: 5%; */
+    display: flex;
+    justify-content: right;
+    margin-top: -40px;
+    margin-right: 50px;
+}
+
+.nav ul li {
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: inline;
+    color: #f4623a;
+}
+
+.nav ul li:hover {
+    color: #ffffff;
+}
+
+.bg-img h1 {
+    width: 40%;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 210px auto;
+    margin-left: 500px;
+    position: relative;
+}
+
+.bg-img h1::after,
+.footer h1::after {
+    content: '';
+    position: absolute;
+    background: #f4623a;
+    width: 20%;
+    height: 5px;
+    bottom: -20%;
+    left: 27%;
+    border-radius: 25px;
+}
+
+.bg-img h3,
+.footer h3 {
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #ffffff;
+    position: absolute;
+    width: 60%;
+    top: 65%;
+    left: 35%;
+}
+
+.bg-img button {
+    border: none;
+    font-size: 20px;
+    background: #f4623a;
+    color: #ffffff;
+    margin-left: 600px;
+    position: absolute;
+    bottom: 8%;
+    height: 60px;
+    width: 200px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.bg-img button:hover {
+    background: #dc3545;
+}
+
+.mid,
+.services {
+    position: relative;
+    background: #f4623a;
+    height: 500px;
+}
+
+.mid h1,
+.services h1,
+.wrapper h1,
+.footer h1 {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+}
+
+.mid h1::after,
+.services h1::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    width: 20%;
+    height: 5px;
+    top: 150%;
+    left: 40%;
+    border-top: 2px solid black;
+    border-radius: 25px;
+}
+
+.mid h3 {
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    left: 55%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: #ffffff;
+}
+
+.mid button,
+.wrapper button {
+    border: none;
+    font-size: 20px;
+    background: #ffffff;
+    color: #000000;
+    margin-left: 590px;
+    position: absolute;
+    bottom: 15%;
+    height: 60px;
+    width: 200px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.mid button:hover {
+    background: #6c757d;
+}
+
+.services {
+    background: #ffffff;
+}
+
+.services h1 {
+    left: 43%;
+    color: #000000;
+}
+
+.services h1::after {
+    background: #f4623a;
+}
+
+.box {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.box1 {
+    text-align: center;
+    height: 300px;
+}
+
+.box1 i {
+    padding: 15px;
+    color: #f4623a;
+    font-size: 45px;
+}
+
+.box1 h2 {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.box1 h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: gray;
+}
+
+.fr-img {
+    display: grid;
+    grid-template-columns: repeat(3, 30fr);
+    margin-top: 79px;
+}
+
+img {
+    width: 450px;
+}
+
+.wrapper {
+    height: 350px;
+    background: #343a40;
+    position: relative;
+}
+
+.wrapper h1 {
+    left: 32%;
+}
+
+.wrapper button:hover {
+    background: #e9ecef;
+}
+
+.footer {
+    position: relative;
+    background: #ffffff;
+    height: 700px;
+}
+
+.footer h1 {
+    color: black;
+    top: 15%;
+    left: 41%;
+}
+
+.footer h1::after {
+    bottom: -40%;
+    left: 40%;
+    border-top: 2px solid;
+}
+
+.footer h3 {
+    color: #343a40;
+    top: 30%;
+    width: 35%;
+    left: 35%;
+}
+
+form {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+input,
+textarea {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+}
+
+textarea {
+    width: 505px;
+}
+
+.submit {
+    border: none;
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #f4623a;
+}
