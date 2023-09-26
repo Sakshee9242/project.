@@ -47,6 +47,7 @@
 }
 
 .nav ul li:hover {
+    cursor: pointer;
     color: #ffffff;
 }
 
@@ -163,6 +164,9 @@
 .mid button:hover {
     background: #6c757d;
 }
+img:hover{
+    transform: scale(1.1);
+}
 
 .services {
     background: #ffffff;
@@ -183,18 +187,24 @@
     position: absolute;
     top: 50%;
     justify-content: space-between;
-    padding: 10px;
+    padding: 12px;
 }
 
 .box1 {
     text-align: center;
     height: 300px;
+    padding: 10px;
+    position: relative;
 }
 
 .box1 i {
     padding: 15px;
     color: #f4623a;
     font-size: 45px;
+    position: relative;
+}
+.box1 i:hover{
+    transform: scale(1.5);
 }
 
 .box1 h2 {
@@ -204,7 +214,7 @@
 }
 
 .box1 h4 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: lighter;
     color: gray;
 }
@@ -213,18 +223,16 @@
     display: grid;
     grid-template-columns: repeat(3, 30fr);
     margin-top: 79px;
-}
-
-img {
-    width: 450px;
+    background-color: #343a40;
 }
 
 .wrapper {
+    margin-top: 0;
+    padding: 0%;
     height: 350px;
     background: #343a40;
     position: relative;
 }
-
 .wrapper h1 {
     left: 32%;
 }
