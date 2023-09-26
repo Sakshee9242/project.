@@ -179,6 +179,7 @@
 
 .box {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     top: 50%;
     justify-content: space-between;
