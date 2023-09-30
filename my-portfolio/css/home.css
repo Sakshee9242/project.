@@ -107,10 +107,17 @@
 .services {
     position: relative;
     background: #f4623a;
-    height: 500px;
+    height: 700px;
+}
+.mid h1{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 100;
 }
 
-.mid h1,
 .services h1,
 .wrapper h1,
 .footer h1 {
@@ -180,6 +187,40 @@ img:hover{
 .services h1::after {
     background: #f4623a;
 }
+.mid{position: relative;font-size: 50px;}
+.about-me{
+    
+   display: grid;
+   column-gap: 8px;
+   grid-template-columns: repeat(3, 2fr);
+   position: absolute;
+   top: 25%;
+   padding: 20px 20px;
+   height: 300px;
+   text-align: center;
+
+}
+.about-me h5{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.about-me h6{
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: lighter;
+}
+.about-me i{
+    font-size: 35px;
+    font-weight: 300;
+    color: #343a40;
+}
+.details{
+    border: 1px solid #ffffff;
+    
+}
 
 .box {
     display: flex;
@@ -205,6 +246,7 @@ img:hover{
 }
 .box1 i:hover{
     transform: scale(1.5);
+    color: #000000;
 }
 
 .box1 h2 {
