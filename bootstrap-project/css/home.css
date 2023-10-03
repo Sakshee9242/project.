@@ -335,3 +335,13 @@ textarea {
     opacity: 0.8;
     background: #f4623a;
 }
+textarea {
+    width: 505px;
+}
+
+.submit {
+    border: none;
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #f4623a;
+}
