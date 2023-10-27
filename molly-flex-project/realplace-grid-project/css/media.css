@@ -1,0 +1,270 @@
+@media(max-width:900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .right {
+    width: 50%;
+    margin: -70px;
+    margin-left: 380px;
+    padding: 0%;
+  }
+
+  .logo {
+    height: 100px;
+    background-size: contain;
+  }
+
+  .logo p {
+    margin-top: 100px;
+  }
+
+  .nav ul li {
+    display: block;
+    margin-top: 0px;
+    padding: 0;
+  }
+
+  a {
+    padding: 0px;
+  }
+
+  .active {
+    background: transparent;
+  }
+
+  .menu:hover {
+    background-color: transparent;
+  }
+
+  .search {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .location {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .search p {
+    display: none;
+  }
+
+  .property {
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-template-rows: 150px 150px 150px;
+  }
+
+  .deal-page {
+    margin-top: 25px;
+  }
+
+  .deal-page h1 {
+    font-size: 20px;
+  }
+
+  .para2 {
+    font-size: 13px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+  }
+
+  .box1 h3,
+  .box1 h4,
+  .box1 p,
+  .box1 h2 {
+    position: static;
+  }
+
+  .box1 h2 {
+    width: 25%;
+    margin-left: 0;
+  }
+
+  .box1 p {
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  .bg1:hover {
+    background-size: contain;
+  }
+
+  .bg2:hover {
+    background-size: contain;
+  }
+
+  .bg3:hover {
+    background-size: contain;
+  }
+
+  .properties {
+    background: #e6e6fa;
+    height: 650px;
+  }
+
+  .box1 .value,
+  .box1 .label {
+    font-size: 10px;
+    display: inline;
+    color: grey;
+    margin-left: 5px;
+  }
+
+  .property1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+
+  .box2 {
+    margin-left: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .box2 h3,
+  .box2 h4,
+  .box2 p {
+    left: 50%;
+  }
+
+  .box2 h2 {
+    left: 34%;
+  }
+
+  .gallery-format p {
+    font-size: 10px;
+  }
+
+  .gallery-format h3,
+  .gallery-format p,
+  .gallery-format h4 {
+    left: 42%;
+  }
+}
+
+@media(max-width:750px) {
+  .right {
+    margin: -100px;
+    margin-left: 380px;
+    font-size: 12px;
+    display: grid;
+  }
+
+  .nav {
+    margin-left: 50px;
+    font-size: 15px;
+  }
+
+  .home-page1 h3 {
+    width: 70%;
+  }
+
+  .properties {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 800px;
+  }
+
+  .property1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+  }
+
+  .box1 h2 {
+    width: 10%;
+    font-size: 10px;
+  }
+
+  .box1 h3 {
+    margin-left: 50px;
+  }
+
+  .box1 p {
+    width: 50%;
+    margin-left: 250px;
+  }
+
+  .box1 .value,
+  .box1 .label {
+    display: none;
+  }
+
+  .box2 h2 {
+    left: 0%;
+    font-size: 10px;
+  }
+
+  .companies {
+    font-size: 20px;
+    margin-left: 0px;
+    width: 600px;
+  }
+
+  .add-list button {
+    margin-left: 20px;
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+  }
+
+  .gallery-format h3 {
+    font-size: 15px;
+    top: 100%;
+    left: 10%;
+  }
+
+  .gallery-format h4 {
+    font-size: 12px;
+    top: 110%;
+    left: 15%;
+  }
+
+  .gallery-format p {
+    width: 100%;
+    top: 120%;
+    left: 10%;
+  }
+
+
+}
+@media(max-width:580px){
+  .nav ul li a{font-size: 12px;}
+  .home-page1 h3{width: 90%;height: 40px;font-size: 18px;line-height: 35px;}
+  .search button{font-size: 10px;}
+   .location{grid-template-columns: 1fr 1fr;grid-template-rows: repeat(6,20px);column-gap: 90px;}
+   select{width: 150px;font-size: 10px;}
+   input::placeholder{font-size: 10px;}
+   input{width: 150px;}
+   .box1 h3 {
+    margin-left: 150px;
+  }
+  .list{grid-template-columns: 1fr;grid-template-rows: 120px 120px 120px;}
+  .list h3{font-size: 15px;}
+  .img-wrapper{
+    padding: 1px;
+}
+.list1 p{
+  padding: 0px;
+  font-size: 10px;  
+}
+.our-work{height: 350px;padding: 60px;}
+.companies{
+  width: 100%;
+}
+.footer{height: 800px;}
+.down{
+  grid-template-columns: 1fr;
+}
+}
