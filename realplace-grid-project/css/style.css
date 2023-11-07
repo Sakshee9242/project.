@@ -307,6 +307,7 @@ input::placeholder{font-size: 18px;}
     width: 200px;
     transform: scale(1.1);
     object-fit: cover;
+    transition: 1s;
 }
 .box2 h2,.box2 h3, .box2 h4,.box2 p{
      position: absolute;   
@@ -343,13 +344,13 @@ input::placeholder{font-size: 18px;}
     position: absolute;
     top: 90%;
     left: 50%;
-    
 }
 .box2:hover img{
     cursor: pointer;
     transform: scale(1);
     overflow: hidden;
     opacity: 0.9;
+    transition: 1s;
 }
 .add-list{
     height: 650px;
