@@ -2,11 +2,6 @@ nav {
     cursor: pointer;
 }
 
-/* nav li {
-    list-style: none;
-    color: black;
-} */
-
 nav button, #items button{
     background: #a8d741;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
