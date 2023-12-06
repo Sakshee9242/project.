@@ -1,0 +1,29 @@
+*{
+     margin: 0;
+     padding: 0; 
+    box-sizing: border-box;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    
+}
+
+nav .menu > li{
+    position: relative;
+    list-style: none;
+}
+nav .menu > li > .submenu{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    /* background: #ffffff; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    /* color: #ffffff; */
+}

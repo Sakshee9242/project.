@@ -1,14 +1,24 @@
 nav {
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
 
-nav button, #items button{
+ .nav-btn a, #items button{
     background: #a8d741;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.3s;
+    padding: 5px 25px;
+    color: black;
 }
-
- nav button:hover, #items button:hover{
+.icon{
+    margin: 13px 14px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+ #items button:hover{
     transform: rotate(3deg) scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 } 
@@ -18,9 +28,9 @@ nav button, #items button{
     border-radius: 25px;
 }
 
-#design h1 {
+/* #design h1 {
     font-size: 70px;
-}
+} */
 
 #design button {
     transition: 0.3s;
@@ -43,8 +53,8 @@ nav button, #items button{
 }
 
 #our-work {
-    width: 93%;
-    margin-left: 60px;
+       width: 95%;
+       margin-left: 30px;
 }
 
 #our-work .card, #tools .card, #our-team .card, #partner .card, #contacts .card {
@@ -91,18 +101,21 @@ nav button, #items button{
     padding: 50px;
 }
 #about span{
-    height: 150px;
+    height: auto;
     width: 2px;
     background: gray;
 }
-#tools .d-flex, #our-team .d-flex{
+.tool-section{
+
+    background-color: #a8d741;
+}
+/* #tools .d-flex, #our-team .d-flex{
     margin-left: 70px;
     padding: 50px;
-    background-color: #a8d741;
     width: 100%;
     border-radius: 25px;
     width: 93%;
-}
+} */
 #items .item-list{
        background-color: rgb(233, 233, 211);
        border-radius: 25px;
