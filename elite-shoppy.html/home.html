@@ -444,73 +444,7 @@
                 </div>
             </div>
         </div>
-     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
     <script>
         let img = document.querySelector("#img1")
 
@@ -560,28 +494,29 @@
                 x++;//1
             }  
         }
-      counter()
-      setInterval(counter, .10000)
 
+      setInterval(counter, .10000)
+y=0
         function counter1(){
-            if(x<=823){
-                document.getElementById("cust2").innerHTML = (x)
-                x++;//1
+            if(y<=823){
+                document.getElementById("cust2").innerHTML = (y)
+                y++;//1
             }  
         }
-      counter1()
+      
       setInterval(counter1, .10000)
 
+      z=0
             function counter2()
             {
-                if(x<=46)
+                if(z<=46)
                 {
-                    document.getElementById('cust3').innerHTML = (x);//0
-                    x++;//1
+                    document.getElementById('cust3').innerHTML = (z);//0
+                    z++;//1
                 }
             }
-         counter2()
-            setInterval(counter2)
+         
+            setInterval(counter2,.10000)
     
     
     </script>
