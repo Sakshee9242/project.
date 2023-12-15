@@ -1,0 +1,8 @@
+@media(max-width:576px){
+   .collapse{
+    background-color: black;
+   }
+   .navbar a{
+    color: aliceblue;
+   }
+}

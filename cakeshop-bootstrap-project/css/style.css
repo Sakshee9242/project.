@@ -1,0 +1,241 @@
+  @import url('https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Poiret+One&display=swap');
+*{
+    font-family: 'Jost', sans-serif;
+}
+/* font-family: 'Jost', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poiret One', sans-serif; */
+
+header{
+    background: url(../images/h1_hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 160px 0;
+}
+.icon{
+    position: relative;
+}
+.front
+{
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+    color: #E5BF4A;
+}
+.back
+{
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
+
+}
+.icon:hover .front 
+{
+    transform: rotateY(0deg);
+}
+
+.icon:hover .back 
+{
+    transform: rotateY(180deg);
+}
+header .container h5{
+    border: 1px solid #E5BF4A;
+    color: #E5BF4A;
+    transition: 1s;
+}
+header .container h5:hover{
+    background-color: #E5BF4A;
+    color: #ffffff;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background: #E5BF4A;
+    bottom: 0%;
+    left: 0%;
+   transition: 0.8s; 
+}
+nav ul li:hover::before{
+    width: 100%;
+}
+header .container h1{
+    font-size: 70px;
+font-family: 'Poiret One', sans-serif;
+    margin-bottom: 40px;
+}
+header .btn{
+    border: 1px solid #222;
+    color: #222;
+    background: #E5BF4A;
+    transition: 1s;
+    text-transform: uppercase;
+}
+header .btn:hover{
+    border: 1px solid #E5BF4A;
+    background: transparent;
+    color: #E5BF4A;
+}
+/* #title{
+    background-color: ;
+} */
+#title .title-text h2{
+    font-size: 40px;
+    color: #DFDFDF;
+font-family: 'Poiret One', sans-serif; 
+position: relative;
+
+}
+#title .title-text h2::before{
+     content: '';
+     position: absolute;
+     background-color: #E5BF4A;
+     height: 2px;
+     width: 100px;
+     right: 0;
+     left: 0;
+     bottom: -29px;
+     margin: 0 auto;
+}
+#title .title-1 h2{
+    font-weight: 400;
+font-family: 'Poiret One', sans-serif; 
+color: #E5BF4A;
+font-size: 24px;
+margin-bottom: 30px;
+
+}
+#title .title-1 p{
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+#slider h5{
+    font-size: 25px;
+font-family: 'Poiret One', sans-serif; 
+color: #ffffff;
+letter-spacing: 1px;
+
+}
+#slider p{
+    color:#E5BF4A;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#mid .container{
+   position: relative;
+}
+div .btn1{
+    height: 70px;
+    width: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #E5BF4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+}
+div .btn1 i{
+    color: #222;
+}
+div .btn1::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: #E5BF4A;
+    animation: scaleme 1s ease-in-out infinite;
+}
+@keyframes scaleme{
+    to{ transform: scale(2);
+    opacity: 0;}
+}
+ #customer h2, #social h2, #visit h2{
+          font-size: 40px;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: 400; 
+        color: #DFDFDF;
+        letter-spacing: 1px;
+        padding: 10px;
+        
+} 
+#customer i{
+   color: #E5BF4A;
+}
+#customer .line{
+    border-right: 1px solid gray;
+}
+#customer .line{
+    border-right: 1px solid gray;
+}
+#customer .line-2{
+    border-right: 1px solid gray;
+}
+#customer .line-1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+#customer .line1{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;   
+}
+#Blog{
+    padding-top: 50px;
+}
+#Blog h2{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #DFDFDF;
+    padding-bottom: 20px;
+}
+#Blog .text-center{
+    color: #E5BF4A;
+    border: 2px solid #E5BF4A;
+    transition: 1s;
+    cursor: pointer;
+}
+#Blog .text-center:hover{
+    background-color: #E5BF4A;
+    border: 2px solid #222;
+    color: #222;
+}
+
+#Blog p{
+    color: #E5BF4A;
+    font-family: 'Poiret One', sans-serif;
+}
+#visit span{
+    color:#fff;
+    border: 2px solid #ffffff;
+    transition: .5s;
+    cursor: pointer;
+}
+#visit span:hover{
+    color:#E5BF4A;
+    border: 2px solid #E5BF4A
+}
+.pt-3{
+    color: #E5BF4A;
+    font-family: 'Poiret One', sans-serif;
+
+}
+
+
+
