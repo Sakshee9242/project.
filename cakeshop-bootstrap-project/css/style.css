@@ -205,13 +205,13 @@ div .btn1::before{
     color: #DFDFDF;
     padding-bottom: 20px;
 }
-#Blog .text-center{
+#Blog .text-center1{
     color: #E5BF4A;
     border: 2px solid #E5BF4A;
     transition: 1s;
     cursor: pointer;
 }
-#Blog .text-center:hover{
+#Blog .text-center1:hover{
     background-color: #E5BF4A;
     border: 2px solid #222;
     color: #222;
