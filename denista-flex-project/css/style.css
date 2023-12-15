@@ -9,7 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* body *{border: 2px solid ;} */
 .container {
     border-top: 1px solid #dee2e6;
     border-bottom: 1px solid #dee2e6;
@@ -312,16 +311,14 @@ select{
     justify-content: center;
     align-items: center;
     height: 350px;
-    width: 100%;
+    width: 90%;
     position: relative;
-    /* background: red; */
 }
 .box1{
    
  width: 20%;
 }
 .box1 i{
-    /* background: black; */
     border-radius: 50%;
     padding: 10px;
     font-size: 45px;
