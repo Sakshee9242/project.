@@ -6,6 +6,7 @@
     <title>My-portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -29,17 +30,17 @@
 
                     <!-- home start -->
 
-      <div id="home" class="home">
+       <div id="home" class="home">
         <div class="home-section">
-          <h1>Hi, I'm Sakshee Suthar </h1>
-          <h3>Frontend Developer</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic rem eum ullam nulla corporis commodi praesentium harum ab nemo quis error, magni odit obcaecati sit veniam! Doloremque.</p>
-          <div class="btn">
+          <h1 data-aos="fade-right" data-aos-duration="500">Hi, I'm Sakshee Suthar </h1>
+          <h3 data-aos="fade-right" data-aos-duration="1000">Frontend Developer</h3>
+          <p data-aos="fade-right" data-aos-duration="1500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic rem eum ullam nulla corporis commodi praesentium harum ab nemo quis error, magni odit obcaecati sit veniam! Doloremque.</p>
+          <div class="btn" data-aos="fade-right" data-aos-duration="2000">
            <a href="">Hire Me</a>
            <a href="">Let's Talk</a>
           </div>
         </div>
-        <div class="home-icon">
+        <div class="home-icon" data-aos="fade-right" data-aos-duration="2500" >
           <a href=""><i class='bx bxl-facebook'></i></a>
 
           <a href=""><i class='bx bxl-twitter'></i></a>
@@ -156,5 +157,12 @@
         
                    <!-- footer end -->
     </div>
+
+
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
