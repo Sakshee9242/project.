@@ -292,8 +292,22 @@
 
 }
 @media(max-width:500px){
+    #responsive{
+        display: block;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    ul{
+        display: none;
+    }
+    ul li{
+        margin-left: 50px;   
+    }
+     #responsive i{
+        font-size: 30px;
+    }
     .home .home-icon{
-        top: 94%; 
+        top: 55%; 
      }
      .home-img{
         margin-left: 0px;

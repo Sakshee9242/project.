@@ -47,10 +47,13 @@ html{
     animation: logo 2s ease forwards;
     animation-delay: .4s; 
 } 
+#responsive{
+    display: none;
+}
 
 ul li{
     display: inline;
-    margin-right: 10px;
+    margin-right: 10px;   
 }
 .navbar a{
     font-size: 15px;
@@ -281,6 +284,10 @@ ul li{
 .fr-img1{
     position: relative;
     transition: 2s;
+}
+.fr-img1 h3 a{
+    text-decoration: none;
+    color: white;
 }
 .fr-img1:hover{
     scale: 1.06;

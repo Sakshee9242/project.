@@ -1,0 +1,202 @@
+nav {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.nav-btn{
+    transition: 0.3s;
+}
+
+ .nav-btn a, #items button{
+    background: #a8d741;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+    padding: 5px 25px;
+    color: black;
+    border: 2px solid;
+   
+}
+.nav-btn a:hover{
+    background: #ffffff;
+}
+
+.nav-btn:hover{
+    transform: rotate(-3deg) scale(1.1);
+}
+.icon{
+    margin: 13px 14px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+ #items button:hover{
+    transform: rotate(3deg) scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} 
+
+#design {
+    background-color: #a8d741;
+    border-radius: 25px;
+}
+
+/* #design h1 {
+    font-size: 70px;
+} */
+
+#design button {
+    transition: 0.3s;
+    background: black;
+    color: #ffffff;
+    border: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#design button:hover, #partner button:hover, #items-1 button:hover {
+    background: #ffffff;
+    color: black;
+    border: 2px solid black;
+    transform: rotate(3deg) scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#features i{
+    font-size: 50px;
+    color: #a8d741;
+}
+
+#our-work {
+       width: 95%;
+       margin-left: 30px;
+}
+
+#our-work .card, .tool-section .card, #our-team .card, #partner .card, #contacts .card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#our-work .card:hover,  #our-team .card:hover, #partner .card:hover , #contacts .card:hover, .tool-section .card:hover{
+    transform: rotate(-3deg) scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#our-work button:nth-child(2),
+#our-work button:nth-child(4),  #our-team button{
+    transition: 0.3s;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+}
+
+#our-work button:nth-child(2):hover,
+#our-work button:nth-child(4):hover, #our-team button:hover {
+    background-color: #a8d741;
+    transform: rotate(3deg) scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#our-work button:last-child {
+    transition: 0.3s;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #a8d741;
+}
+
+#our-work button:last-child:hover {
+    background-color: #ffffff;
+    transform: rotate(3deg) scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#about{
+    margin: 50px;
+    margin-top: 100px;
+    padding: 50px;
+}
+#about span{
+    height: auto;
+    width: 2px;
+    background: gray;
+}
+.tool-section{
+    background-color: #a8d741;
+
+}
+.tool-section h2{
+     padding: 20px 0;
+}
+.tool-section img{
+    height: 230px;
+}
+#our-team{
+    background-color: #a8d741;
+    margin-top: 70px;
+}
+ #our-team .d-flex{
+    border-radius: 25px;
+    padding: 10px;
+} 
+#items .col-12{
+       background-color: rgb(233, 233, 211);
+       border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+
+}
+#items .col-12:hover{
+    transform: rotate(-3deg) scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#items .item-list img{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+#items button{
+    width: 130px;
+}
+#view{
+    background-color: #a8d741;
+}
+#view h1{
+    font-size: 70px;
+}
+#partner .card{
+    background-color: rgb(233, 233, 211);
+}
+#partner button{
+    background: #a8d741;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+    margin-left: 90px;
+}
+#items-1 .item-list{
+        background-color: rgb(233, 233, 211);
+        border-radius: 25px;
+        width: 93%;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     transition: 0.3s;
+ 
+ }
+ #items-1 .item-list:hover{
+    transform: rotate(-3deg) scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#items-1 button{
+    background: #a8d741;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+}
+
+#contacts i{
+    font-size: 50px;
+}
+#contacts .card{
+    background-color: rgb(233, 233, 211);
+
+}
+#form{
+    background-color: #a8d741;
+}
+#form button{
+    background-color: transparent;
+}

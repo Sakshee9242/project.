@@ -1,0 +1,325 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Lora&family=Poiret+One&display=swap');
+
+  *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .top-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .top-part .left, .top-part .mid, .top-part .right{
+    flex-basis: 25%;
+  }
+  .top-part .left{
+    margin-left: 20px;
+  }
+  .top-part .right{
+    margin-right: 10px;
+    position: relative;
+  }
+  .top-part .left i{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    color: rgb(77, 77, 77);
+    transition: linear .3s;
+  }
+  .top-part .left i:hover{
+    color: #fff;
+    background-color: rgb(149, 173, 190);
+  }
+  .mid h3 a,  .mid h6 a{
+      text-decoration: none;
+      color: black;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+    
+  }
+  .mid h6 a{
+      color: gray;
+      letter-spacing: 1px;
+  }
+ .top-part .right input{
+    border-radius: 40px;
+    height: 40px; 
+    border: none;
+    background-color: rgb(233, 231, 231);
+    outline: none;
+  }
+  .top-part .right span{
+    background-color: rgb(149, 173, 190);
+    padding: 12px;
+    color: aliceblue;
+    position: absolute;
+    right:  33%;
+    top: 0%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .navbar a{
+  font-family: 'Lora', serif;
+      letter-spacing: 2px;
+      font-weight: 500;
+      color: rgb(0, 0, 0);
+    font-size: 13px;
+    transition: linear .5s;   
+  }
+  .navbar a:hover{
+    color: rgb(149, 173, 190);
+
+  }
+  .navbar li{
+    position: relative;
+  }
+  .navbar li::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(149, 173, 190);
+    height: 2px;
+    width: 0px;
+    transition: linear .5s;
+    bottom: -21%;
+    left: 0%;
+  }
+  .navbar li:hover::before{
+    width: 100%;
+  }
+  #main{   
+    animation: animate 2s infinite ease-in-out;   
+  } 
+    
+@keyframes animate{
+  100%{background: url('/img/bg_1.jpg') no-repeat center/cover;}
+}
+
+  #main .container h1{
+    margin-top: 150px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 70px;
+   
+  }
+  #main .container p{
+   font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  }
+  #main .container a:first-child{
+    font-size: 20px;
+    background-color: rgb(149, 173, 190);
+    color: #fff;
+
+  }
+  #main .container a:last-child{
+    font-size: 20px;
+background-color: #fff;
+  }
+#round{
+  position: relative;
+  font-family: 'Jost', sans-serif;
+
+}
+#round-box{
+  transform: translatey(-50px);
+  /* background: red; */
+
+}
+
+#round-box .container .img-wrapper{
+   background-color: gainsboro;
+   position: relative;
+   z-index: 1;
+   transition: 1s;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#round-box .container .img-wrapper:hover{
+     background-color: rgb(149, 173, 190);
+}
+
+#round-box .container .img-wrapper::before{
+  position: absolute;
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff7a5c;;
+  top: 30%;
+  right: 20%;
+  z-index: -1;
+  transform: translateX(0px) rotate(0deg);
+  transition: 1s;
+}
+#round-box .container .img-wrapper:hover::before{
+  transform: translateX(-30px) rotate(10deg);
+  background-color: #fff;
+}
+#round-box h3{
+  font-size: 31px;
+}
+#round-box .container p{
+  font-size: 25px;
+  line-height: 45px;
+}
+
+#counter{
+      background-color: gainsboro;
+    
+}
+#counter p{
+  font-size: 25px;
+  color: gray;
+}
+#author h1{
+  font-size: 50px;
+  font-family: 'Lora', serif;
+   font-weight: 600;
+  letter-spacing: 1px;
+}
+#author p{
+ font-size: 19px;
+ line-height: 30px;
+}
+#author p a{
+ font-size: 17px;
+ background-color: rgb(149, 173, 190);
+ color: #fff;
+ 
+}
+#books h1{
+  font-family: 'Lora', serif;
+  font-weight: 500; 
+}
+#books .book-wrapper{
+  height: 350px;
+  transition: 0.5s ease;
+}
+#books .book-wrapper .book-left,#books .book-wrapper .book-right{
+  width: 50%;
+}
+#books .book-wrapper .book-right{
+  background-color: #f5f4f0;
+  padding: 10px 20px;
+}
+.book-wrapper .book-right .book-icon a{
+  display: block;
+}
+.book-wrapper .book-right .book-icon{
+  position: absolute;
+  top: 4%;
+  left: -30%;
+  opacity: 0;
+}
+#books .book-wrapper:hover .book-right .book-icon{
+  opacity: 1;
+}
+#books .book-wrapper:hover .book-right{
+  background-color: rgb(149, 173, 190);
+
+}
+.book-wrapper .book-right .book-icon a i{
+  background-color: #f5f4f0;
+  color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 8px;
+  
+}
+.book-wrapper .book-right .book-icon a i:hover{
+  background-color: #ff7a5c;
+  color: #fff;
+}
+#books .book-wrapper .book-left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#testimonial{
+  margin-top: 150px;
+ background:linear-gradient(rgba(149, 173, 190, 0.5),rgba(149, 173, 190, 0.5)) ,url('/img/bg_4.jpg') no-repeat center/cover;
+  height: 300px;
+}
+.testimonial-slide{
+  transform: translateY(-60px);
+  padding: 10px 50px;
+}
+#testimonial h1{
+  font-size: 50px;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 900;
+}
+.testimonial-slide .card{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.testimonial-slide .col-12{
+    padding-bottom: 10px;
+}
+.testimonial-slide .card .person-img{
+   width: 100px;
+   height: 100px;
+   text-align: center;
+}
+.testimonial-slide .card .person-img img{
+  object-position: center;
+}
+#blog .mid-text{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+  transform: translateY(-50px);
+  background: gainsboro;  
+}
+
+#blog .mid-text:hover{
+  background-color: rgb(149, 173, 190);
+}
+#blog .mid-text .date{
+  color: rgb(149, 173, 190);
+}
+#blog .mid-text:hover .date{
+  color: #fff;
+}
+#blog .mid-text p{
+   height: 20px;
+}
+
+#blog .bottom-text h3,#blog .bottom-text h6{
+  transform: translateY(-40px);
+  font-family: 'Lora', serif;   
+}
+footer ul{
+  margin: 0;
+  padding: 0;
+}
+footer li{
+  padding-bottom: 10px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
