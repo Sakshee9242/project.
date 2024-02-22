@@ -309,11 +309,12 @@ ul li{
     opacity: 0.5;
 }
 .fr-img1 h3{
+    text-align: center;
     color: #ffffff;
     position: absolute;
     font-size: 25px;
     top: 40%;
-    left: 21%;
+    left: 30%;
     opacity: 0;
     transition: 1s;
     cursor: pointer;
