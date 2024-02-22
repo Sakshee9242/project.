@@ -370,12 +370,41 @@
      .home-img{
         margin-left: -30px;
     }
+    .details{
+        height: 1010px;
+    }
     .details button{
-        top: 95%;
+        top: 90%;
+        left: 30%;
+        height: 50px;
+        width: 160px;
     }
     .project button{
         top: 92%;
+        left: 30%;
+        height: 50px;
+        width: 160px;
+        font-size: 18px;
     }
+    .details h1,.project h1,.services h1,.footer h1{
+        font-size: 30px;
+    }
+    .personal-info h4{
+        font-size: 25px;
+    }
+    .personal-info h6{
+        font-size: 16px;
+    }
+    .personal-info span{
+        font-size: 19px;
+        color: gray;
+    }
+    .SUBMIT {
+        font-size: 18px;
+        height: 50px;
+        width: 160px;
+    }
+    
 
 }
 @media(max-width:375px){
@@ -386,15 +415,41 @@
         margin-left: -63px;
     }
     .details{
-        height: 1250px;
+        height: 900px;
     }
     .details button{
         top: 95%;
         left: 28%;
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
     }
     .project button{
         top: 92%;
-        left: 27%;
+        left: 28%;
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
     }
+    .details h1,.project h1,.services h1,.footer h1{
+        font-size: 25px;
+    }
+    .personal-info h4{
+        font-size: 21px;
+    }
+    .personal-info h6{
+        font-size: 15px;
+    }
+    .personal-info span{
+        font-size: 18px;
+        color: gray;
+    }
+    .SUBMIT {
+        font-size: 18px;
+        height: 50px;
+        width: 160px;
+    }
+    
+
 
 }
