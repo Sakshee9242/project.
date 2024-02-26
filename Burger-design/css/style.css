@@ -1,177 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Jost&family=Lato&family=Lora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap')
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Jost&family=Lato&family=Lora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap") * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+/* body *{
     border: 1px solid black;
+} */
+header {
+  background-image: url(/images/Rectangle\ \(1\).png)
 }
-body *{
-    border: 1px solid black;
+.logo {
+  font-family: "Montserrat", sans-serif;
 }
-header{
-    background-image: url(/images/Rectangle\ \(1\).png);
+.delivery {
+  font-family: "Montserrat", sans-serif;
+  color: #3d2514;
+  font-size: 17px;
+  font-weight: 700;
 }
-.logo{
-    font-family: "Montserrat", sans-serif;
+.nav-item {
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
 }
-.delivery{
-    font-family: "Montserrat", sans-serif;
-    color: #3d2514;
-    font-size: 17px;
-    font-weight: 700;
+.nav-link {
+  color: #3d2514 !important;
 }
-.nav-item{
-    font-weight: 700;
-    font-family: "Bebas Neue", sans-serif;
+.upper-part {
+  padding: 80px 0;
 }
-.nav-link{
-    color: #3d2514 !important;
+.upper-part h4 {
+  width: 370px;
+  color: #3d2514;
+  font-weight: 600;
+  border: 2px dashed #3d2514;
+  font-size: 14px;
+  padding: 1px;
+  text-transform: uppercase;
+  padding: 0;
+  line-height: 30px;
 }
-.upper-part{
-    padding: 80px 0;
+.upper-part h1 {
+  text-transform: uppercase;
+  color: #3d2514;
+  font-size: 114px;
+  font-weight: bolder;
+  filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+  font-family: "Alfa Slab One";
+  margin-left: -10px;
+  padding: 0;
+  line-height: 80px;
 }
-.upper-part h4{
-    width: 370px;
-    color: #3d2514;
-    font-weight: 600;
-    border: 2px dashed #3d2514;
-    font-size: 14px;
-    padding: 1px;
-   text-transform: uppercase;
-   padding: 0;
-   line-height: 30px;
+.upper-part h2 {
+  margin-left: -10px;
+  color: #3d2514;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Alfa Slab One";
+  filter: drop-shadow(2.136px 3.128px 0px #fee8bc);
 }
-.upper-part h1{
-text-transform: uppercase;
-color: #3d2514;
-font-size: 114px;
-font-weight: bolder;
-filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
-font-family: "Alfa Slab One";
-margin-left: -10px;
-padding: 0;
-line-height: 80px;
+.upper-part .img {
+  position: relative;
+  height: 300px;
+  width: 250px;
 }
-.upper-part h2{
-margin-left: -10px;
-color: #3d2514;
-padding: 0;
-text-transform: uppercase;
-font-weight: 900;
-font-family: "Alfa Slab One";
-filter: drop-shadow(2.136px 3.128px 0px #fee8bc);
-}
-.upper-part .img{
-    position: relative;
-    height: 300px;
-    width: 250px;
-}
-.upper-part .img img{
-    height: 100%;
-    width: 100%;
+.upper-part .img img {
+  height: 100%;
+  width: 100%;
 }
 .upper-part .img .img1,
 .upper-part .img .img2,
-.upper-part .img .img3{
-    position: absolute;
+.upper-part .img .img3 {
+  position: absolute;
 }
-.upper-part .img .img2{
-    z-index: 1;
-    left: 150%;
+.upper-part .img .img2 {
+  z-index: 1;
+  left: 150%;
 }
-.upper-part .img .img1{
-    z-index: ;
-    left: 100%;
+.upper-part .img .img1 {
+  z-index: ;
+  left: 100%;
 }
-.upper-part .img .img3{
-    z-index: ;
-    left: 220%;
+.upper-part .img .img3 {
+  z-index: ;
+  left: 220%;
 }
-.ellipse{
-    height: 100px;
-    width: 100px;
-    background-color: #bf2222;
-    border-radius: 50%;
-    position: absolute;
-    top: 64%;
-    left: 60%;
-    z-index: 1;
+.ellipse {
+  height: 100px;
+  width: 100px;
+  background-color: #bf2222;
+  border-radius: 50%;
+  position: absolute;
+  top: 64%;
+  left: 60%;
+  z-index: 1;
 }
-.ellipse p{
-    position: absolute;
- font-size: 30px;
- font-family: "Bebas Neue", sans-serif;
- color: #ffffff;
- font-weight: 600;
+.ellipse p {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
   text-align: center;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
-
+  transform: translate(-50%, -50%);
 }
 
-.ellipse span{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #ffffff;
+.ellipse span {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
 }
-#mid-part{
-    font-family: "Bebas Neue";
+#mid-part {
+  font-family: "Bebas Neue";
 }
-#recepie-part{
-    font-family: "Alfa Slab One" ;
+#recepie-part {
+  font-family: "Alfa Slab One";
+  color: #3d2514;
+}
+#recepie-part .para1 {
+  color: #3d2514;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #ffc045;
+  display: inline-block;
+  padding: 10px;
+}
+#recepie-part h1 {
+  padding: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #3d2514;
+  font-family: "Bebas Neue";
+  font-weight: 900;
+}
+#recepie-part .img-box {
+  width: 70%;
+  height: 250px;
+  margin-left: 50px;
+}
+#recepie-part .img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#recepie-part .text-box h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #3d2514;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+#recepie-part .text-box h6 {
+  text-align: center;
+}
+#recepie-part .text-box button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #bf2222;
+  text-align: center;
+  font-weight: 900;
+}
+#events .row{
+    padding: 30px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+#events h5 {
+    margin-top: 50px;
+  color: #3d3d3d;
+  font-weight: 900;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+}
+#events h1{
+   color: #3d2514;
+   font-family: "Alfa Slab One";
+   font-weight: bolder;
+   font-size: 45px;
+   letter-spacing: -1px;
+}
+#form{
+    margin-top: 50px;
+    padding: 30px 0px;
+}
+#form h4{
+      color: #3d2514;
+}
+#form h1{
     color: #3d2514;
-}
-#recepie-part .para1{
-    color: #3d2514;
-    font-weight: 600;
-    font-size: 20px;
-    background-color: #ffc045;
-    display: inline-block;
-    padding: 10px;
-}
-#recepie-part h1{
-    padding: 10px;
     font-size: 50px;
-    text-transform: uppercase;
-    color: #3d2514;
- font-family: "Bebas Neue";
-      font-weight: 900;
+   font-family: "Alfa Slab One";
+   font-weight: 900;
+   word-spacing: 10px;
+  letter-spacing: -4px;
 }
-#recepie-part .img-box{
-    width: 70%;
-    height: 250px;
-    margin-left: 50px;
+#form .row{
+ padding: 30px 0px;
 }
-#recepie-part .img1{
+#form input{
+  height: 50px;
+  width: 350px;
+  padding: 0px 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  outline: none;
+ border: 1px solid #bebebe;
+ border-radius: 5px;
+}
+#form button{
+  width: 350px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+ outline: none;
+ border: none;
+ border-radius: 5px;
+ color: #ffffff;
+ font-weight: 900;
+ font-family: "Alfa Slab One";
+ background-color: #bf2222;
+}
+#contact{
+  width: 100%;
+}
+#contact .container-fluid{
+    background: url(/images/Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).png) no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+#contact .logo{
+    width: 250px;
+}
+#contact .logo img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
 }
-#recepie-part .text-box h4{
-    margin-top: 20px;
-    text-transform: uppercase;
-    color: #3d2514;
-    font-size: 25px;
-    font-weight: 900;
-    text-align: center;
+#contact .row .text{
+    font-size: 17px;
+    font-weight: 500;
 }
-#recepie-part .text-box h6{
-    text-align: center;
-}
-#recepie-part .text-box button{
-    border: none;
-    outline: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #bf2222;
-    text-align: center;
-}
-
-
 
 /* .ellipse img{
     position: absolute;
@@ -180,4 +255,3 @@ filter: drop-shadow(2.136px 3.128px 0px #fee8bc);
     z-index: 1;
 
 } */
-
