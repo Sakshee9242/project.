@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+<!-- google fonts link here  -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+<style>
+      *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+        
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2090704994.1710656562&semt=ais") no-repeat center/cover;
+            font-family: poppins;
+            font-weight: bolder;
+            font-size: 40px;
+            
+        }
+        span{
+            padding: 20px 20px;
+            border-radius: 10px;
+            /* border: 5px double orangered; */
+            background: rgba(214, 221, 228, 0.8);
+            margin-left: 10px;
+            color:  rgba(26, 137, 241, 1);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+</style>
+
+  </head>
+  <body>
+    <div>
+      <span id="hour"></span> &nbsp; :
+       <span id="mint"></span> &nbsp; :
+      <span id="sec"></span> &nbsp;
+      <span id="am_pm"></span> &nbsp;
+      <span id="greetings"></span>
+   </div>
+      <script>
+        function GetTime() {
+            let greeting = document.querySelector("#greetings")
+          let hours = document.querySelector("#hour");
+          let minutes = document.querySelector("#mint");
+          let seconds = document.querySelector("#sec");
+          let am_pm = document.querySelector("#am_pm");
+          let date = new Date();
+          let dh = date.getHours();
+          let dm = date.getMinutes();
+          let ds = date.getSeconds();
+
+          hours.innerHTML = dh;
+          minutes.innerHTML = dm;
+          seconds.innerHTML = ds;
+
+
+
+
+          if (dh >= 12) {
+            console.log("hello");
+            dh = dh - 12;
+            am_pm.innerHTML = "PM"
+          }
+
+          
+         if ((dh ==12 || dh <= 4) && (am_pm.innerHTML == "PM")){
+            greeting.innerHTML = "Good Afternoon"
+            greeting.style.color = "yellow"
+            
+          }
+          else if ((dh ==4 || dh <= 8 ) && (am_pm.innerHTML == "PM")){
+            greeting.innerHTML = "Good Evening"
+            greeting.style.color = "orangered"
+
+            
+          }
+          else if ((dh ==8 || dh <= 12) && (am_pm.innerHTML == "PM")){
+            greeting.innerHTML = "Good Night"
+            greeting.style.color = "black"
+          }
+          else{
+            greeting.innerHTML = "Good Morning"
+            greeting.style.color = "cyan"
+            
+          }
+          
+
+          {
+            ds < 10 ? (seconds.innerHTML = "0" + ds) : (seconds.innerHTML = ds);
+          }
+          {
+            dm < 10 ? (minutes.innerHTML = "0" + dm) : (minutes.innerHTML = dm);
+          }
+          {
+            dh < 10 ? (hours.innerHTML = "0" + dh) : (hours.innerHTML = dh);
+          }
+        }
+        setInterval(GetTime, 1000);
+      </script>
+    </div>
+  </body>
+</html>
