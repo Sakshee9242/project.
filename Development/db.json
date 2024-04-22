@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+       "name" : "sakshee suthar",
+      "email": "sutharsakshee@gmail.com",
+      "password": "sakshee123"
+    },
+    {
+      "id": "2",
+      "name" : "charvi suthar",
+      "email": "charvisakshee@gmail.com",
+      "password": "charvi123"
+    },
+    {
+      "id": "0034",
+      "name": "sakshee",
+      "email": "dhruvalsuthar@gmail.com",
+      "password": "sakshee123"
+    }
+  ]
+}
